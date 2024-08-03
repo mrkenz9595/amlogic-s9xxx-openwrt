@@ -31,7 +31,11 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 # Add luci-app-amlogic
 rm -rf package/luci-app-amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
-git clone https://github.com/kenzok8/small-package package/small-package
+git clone https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+git clone https://github.com/ilxp/koolproxy.git package/koolproxy package/koolproxy
+git clone https://github.com/0x676e67/luci-theme-design.git package/luci-theme-design
+git clone https://github.com/uparrows/luci-theme-atmaterial.git package/luci-theme-atmaterial
+
 #
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
